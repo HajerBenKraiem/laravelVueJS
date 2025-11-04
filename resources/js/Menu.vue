@@ -16,6 +16,15 @@ pr-3" to="/"> Home </router-link>
 <router-link class="nav-link pr-3" to="/addCategorie"> | Ajout
 Catégorie |</router-link>
 </li>
+<li class="nav-item">
+<router-link class="nav-link navbar-brand pr-3"
+to="/scategories">| Sous Catégories |</router-link>
+</li>
+<li class="nav-item">
+<router-link class="nav-link navbar-brand pr-3"
+to="/addScategories"> Ajout Sous catégories </router-link>
+</li>
+
 </ul>
 </div>
 </nav>

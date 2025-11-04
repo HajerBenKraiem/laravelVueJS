@@ -5,6 +5,11 @@ import AllCategories from "../Components/Categories/AllCategories.vue"
 //import AddCategorie from "./Components/Categories/AddCategorie.vue";
 import AddCategorie from "../Components/Categories/AddCategorie.vue";
 import EditCategorie from "../Components/Categories/EditCategorie.vue";
+//import AllScategories from "./components/SousCategories/AllSousCategories";
+import AllScategories from"../Components/SousCategories/AllSousCategories.vue";
+//import AddScategorie from "./components/SousCategories/AddSousCategorie";
+import AddScategorie from"../Components/SousCategories/AddSousCategorie.vue";
+import EditSousCategorie from "../Components/SousCategories/EditSousCategorie.vue";
 const routes = [
 {
 path: '/',
@@ -25,7 +30,23 @@ component: AddCategorie
 path: '/editCategorie',
 name: 'editCategorie',
 component: EditCategorie
-}
+},
+{
+path: '/scategories',
+name: 'scategories',
+component: AllScategories
+},
+{
+path: '/addScategories',
+name: 'addScategories',
+component: AddScategorie
+},
+{
+path: '/editScategorie',
+name: 'editScategorie',
+component: EditSousCategorie
+},
+
 ];
 const router = createRouter({
 history: createWebHashHistory(),
