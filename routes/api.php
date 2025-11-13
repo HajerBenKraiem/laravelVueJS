@@ -7,6 +7,7 @@ use App\Http\Controllers\ScategorieController;
 use App\Http\Controllers\ArticleController; 
 use App\Http\Controllers\AuthController;
 
+use App\Http\Controllers\Api\UploadController;
 
 
 Route::get('/user', function (Request $request) {
@@ -31,5 +32,8 @@ Route::middleware('auth:api')->group(function () {
 Route::post('logout', [AuthController::class, 'logout']);
 Route::post('refresh', [AuthController::class, 'refresh']);
 Route::get('user-profile', [AuthController::class, 'userProfile']);
+
+
 });
 });
+Route::post('/upload', [UploadController::class, 'upload']);

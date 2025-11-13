@@ -10,11 +10,32 @@ import AllScategories from"../Components/SousCategories/AllSousCategories.vue";
 //import AddScategorie from "./components/SousCategories/AddSousCategorie";
 import AddScategorie from"../Components/SousCategories/AddSousCategorie.vue";
 import EditSousCategorie from "../Components/SousCategories/EditSousCategorie.vue";
+
+//import AllArticles from "./Components/Articles/AllArticles.vue";
+import AllArticles from "./../Components/Articles/AllArticles.vue";
+
+//import AddArticles from "./Components/Articles/AddArticle.vue";
+//import AddArticles from "../Components/Articles/AddArticle.vue";
+import AddArticles from "../Components/Articles/AddArticle.vue";
+
+//import EditArticle from "./components/Articles/EditArticle.vue";
+import EditArticle from "../Components/Articles/EditArticle.vue";
 const routes = [
 {
 path: '/',
 name: 'home',
 component: Home
+},
+{
+path: '/articles',
+name: 'articles',
+component: AllArticles
+},
+
+{
+path: '/addArticle',
+name: 'addArticle',
+component: AddArticles
 },
 {
 path: '/categories',
@@ -46,6 +67,12 @@ path: '/editScategorie',
 name: 'editScategorie',
 component: EditSousCategorie
 },
+{
+path: '/editArticle',
+name: 'editArticle',
+component: EditArticle
+},
+
 
 ];
 const router = createRouter({

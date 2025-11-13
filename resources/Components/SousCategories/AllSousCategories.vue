@@ -20,7 +20,7 @@
 
 
             <img
-              :src="'.../storage/images/' + scat.imagescat"
+              :src="scat.imagescat"
               :alt="scat.nomscategorie"
               width="100"
             />

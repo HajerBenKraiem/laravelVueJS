@@ -25,6 +25,16 @@ to="/scategories">| Sous Catégories |</router-link>
 to="/addScategories"> Ajout Sous catégories </router-link>
 </li>
 
+<li class="nav-item">
+<router-link class="nav-link pr-3" to="/articles"> | Articles
+|</router-link>
+</li>
+<li class="nav-item">
+<router-link class="nav-link navbar-brand pr-3" to="/addArticle">
+Ajout Article </router-link>
+</li>
+
+
 </ul>
 </div>
 </nav>
